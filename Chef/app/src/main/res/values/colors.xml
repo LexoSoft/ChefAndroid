@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <color name="Primary">#FF9800</color>
-    <color name="PrimaryDark">#EF6C00</color>
-    <color name="Accent">#FF9100</color>
+    <color name="PrimaryDark">#E65100</color>
     <color name="PrimaryLight">#FFB74D</color>
     <color name="PrimaryVeryLight">#FFCC80</color>
-    <color name="WindowBackground">#FFFDE7</color>
+    <color name="Accent">#FF9100</color>
+    <color name="NavigationBar">#FF6D00</color>
+    <color name="WindowBackground">@color/White</color>
     <color name="White">#ffffff</color>
     <color name="Black">#000000</color>
     <color name="DarkGray">#202020</color>
-    <color name="LightGray">#707070</color>
-    <color name="NavigationBar">#FF9800</color>
+    <color name="LightGray">#808080</color>
+
 </resources>

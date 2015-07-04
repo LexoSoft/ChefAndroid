@@ -2,6 +2,7 @@
 <resources>
 
     <style name="AppTheme" parent="BaseTheme">
+        <!-- FOR android 5.0 -->
         <item name="android:navigationBarColor">@color/NavigationBar</item>
     </style>
 

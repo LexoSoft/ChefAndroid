@@ -2,15 +2,47 @@
 
     <!-- Base application theme. -->
     <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:windowActionBar">false</item>
-        <item name="android:windowNoTitle">true</item>
+        <!-- Customize your theme here.(For ALL) -->
         <item name="colorPrimary">@color/Primary</item>
-        <item name="colorPrimaryDark">@color/PrimaryDark</item>
         <item name="colorAccent">@color/Accent</item>
+        <item name="colorPrimaryDark">@color/PrimaryDark</item>
         <item name="android:windowBackground">@color/WindowBackground</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
     </style>
 
     <style name="AppTheme" parent="BaseTheme">
-
+        <!-- Just Android < 5.0-->
     </style>
+
+    <style name="ActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:itemTextAppearance">@style/ActionBar.TextApearance</item>
+        <item name="android:textColorPrimary">@color/White</item>
+      <item name="android:actionMenuTextColor">@color/Black</item>
+    </style>
+
+    <style name="ActionBar.TextApearance" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">@color/Black</item>
+    </style>
+
+    <style name="TitleTextStyle">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/Black</item>
+    </style>
+
+    <style name="SubTitleTextStyle">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/Black</item>
+    </style>
+
+    <style name="TextStyle">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/Black</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:textColor">@color/White</item>
+        <item name="android:background">@drawable/button_background</item>
+    </style>
+
 </resources>

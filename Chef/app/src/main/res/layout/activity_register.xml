@@ -1,0 +1,83 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lexosoft.chef.Register">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Register_ActionBar"
+        android:theme="@style/ActionBar"
+        android:background="@color/Primary"
+        android:layout_height="@dimen/Toolbar_height"
+        android:layout_width="match_parent"
+        android:elevation="@dimen/Toolbar_elevation">
+
+        </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/Content_Margin_Top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:inputType="text"
+            android:id="@+id/Register_Username"
+            android:hint="@string/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/Control_Margin"/>
+
+        <EditText
+            android:id="@+id/Register_Password"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/Control_Margin"/>
+
+        <EditText
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/Control_Margin"
+            android:id="@+id/Register_Email"
+            android:hint="@string/Email"/>
+
+        <CheckBox
+            android:id="@+id/IAgree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/Control_Margin"
+            android:text="@string/IAccept"
+            android:checked="true"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:borderlessButtonStyle"
+            android:layout_margin="@dimen/Control_Margin"
+            android:text="@string/IHAA"
+            android:gravity="center"
+            android:id="@+id/IHAA"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/NavigationBar"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Register_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/Control_Margin"
+            android:layout_marginRight="@dimen/Control_Margin"
+            android:layout_marginBottom="@dimen/Control_Margin"
+            style="@style/ButtonStyle"
+            android:text="@string/title_activity_register"/>
+
+
+
+</RelativeLayout>
+<!-- TODO:set margin top of controls 5dp & bottom none -->

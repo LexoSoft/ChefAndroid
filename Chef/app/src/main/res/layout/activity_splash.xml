@@ -1,16 +1,49 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Splash"
-    android:background="@color/Primary">
+    android:background="@color/NavigationBar"
+    android:padding="@dimen/Splash_Padding">
 
-    <ImageView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
         android:layout_centerInParent="true"
-        android:src="@drawable/Chef_shadowless"/>
+        android:orientation="vertical">
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/chef_shadowless"
+            android:maxWidth="@dimen/Splash_icon_max"
+            android:maxHeight="@dimen/Splash_icon_max"
+            />
+
+        <TextView
+            android:id="@+id/SplashTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:gravity="center_horizontal|center_vertical"
+            style="@style/TitleTextStyle"
+            android:textColor="@color/White"
+            android:textSize="@dimen/Splash_Title_Text_Size"/>
+        
+    </LinearLayout>
+    
+    
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/developed_by"
+        android:textColor="@color/White"
+        style="@style/TextStyle"/>
 
 
 </RelativeLayout>

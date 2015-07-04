@@ -1,9 +1,13 @@
 package lexosoft.chef;
 
+import android.content.Intent;
+import android.graphics.Typeface;
+import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class Splash extends ActionBarActivity {
@@ -12,6 +16,22 @@ public class Splash extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        //set Title Typeface
+            TextView Title = (TextView) findViewById(R.id.SplashTitle);
+            Typeface face = Typeface.createFromAsset(getAssets(), "fonts/Pacifico.ttf");
+            Title.setTypeface(face);
+        //Add Delay Handler
+            final int SPLASH_DISPALY_LONG = 800 ; //in miliseconds
+            new Handler().postDelayed(
+              new Runnable() {
+                  @Override
+                  public void run() {
+                        Intent mainIntent = new Intent(Splash.this , Register.class);
+                        startActivity(mainIntent);
+                        finish();
+                  }
+              } , SPLASH_DISPALY_LONG
+            );
     }
 
 
@@ -30,9 +50,7 @@ public class Splash extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+
 
         return super.onOptionsItemSelected(item);
     }

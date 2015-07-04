@@ -1,5 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="Splash_Padding">10dp</dimen>
+    <dimen name="Splash_icon_max">250dp</dimen>
+    <dimen name="Splash_Title_Text_Size">30dp</dimen>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="Toolbar_height">56dp</dimen>
+    <dimen name="Toolbar_elevation">4dp</dimen>
+    <dimen name="Content_Margin_Top">60dp</dimen>
+    <dimen name="Control_Margin">10dp</dimen>
+
 </resources>

@@ -1,0 +1,49 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lexosoft.chef.Login">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Toolbar_height"
+        android:elevation="@dimen/Toolbar_elevation"
+        android:background="@color/Primary"
+        android:id="@+id/Login_ActionBar">
+
+        </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Content_Margin_Top"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/Login_username"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/Control_Margin"
+            android:hint="@string/username"/>
+
+        <EditText
+            android:id="@+id/Login_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/Control_Margin"
+            android:hint="@string/password"/>
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/Login_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        style="@style/ButtonStyle"
+        android:layout_margin="@dimen/Control_Margin"
+        android:text="@string/title_activity_login"/>
+
+</RelativeLayout>
